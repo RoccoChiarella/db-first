@@ -1,0 +1,15 @@
+id                      INT, PRIMARY KEY (=> AUTO_INCREMENT, NOT NULL, UNIQUE, INDEX)
+targa                   VARCHAR(255), NOT NULL
+marca                   VARCHAR(255), NOT NULL
+nome                    VARCHAR(255), NOT NULL
+numero_telaio           VARCHAR(100), NOT NULL, INDEX, UNIQUE
+prezzo_acquisto         DECIMAL(6, 2), NOT NULL
+prezzo_rivendita        DECIMAL(6, 2), NULL
+numero_proprietari      SMALLINT, NULL, DEFAULT(1)
+genere_auto             VARCHAR(15), NOT NULL
+anno                    YEAR, NULL
+disponibilità           TINYINT, NOT NULL, DEFAULT(1)
+descrizione             TEXT, NULL
+provenienza             VARCHAR(5), NOT NULL
+condizione              VARCHAR(20), NULL
+note                    VARCHAR(255), NULL
